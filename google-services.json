@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "576250716167",
+    "firebase_url": "https://mlkitcodelab-d4669.firebaseio.com",
+    "project_id": "mlkitcodelab-d4669",
+    "storage_bucket": "mlkitcodelab-d4669.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576250716167:android:eedda4b51d16d7c6",
+        "android_client_info": {
+          "package_name": "com.funkyidol.mlkitbarcodescanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576250716167-44ka3thc12th77e9i96dmum5i7gtjlvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrYneiJM9DCHvxiu7Lgmvl8ptFvSve9_U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
