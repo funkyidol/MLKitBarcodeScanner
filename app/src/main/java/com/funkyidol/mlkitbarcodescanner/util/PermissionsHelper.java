@@ -1,4 +1,4 @@
-package com.funkyidol.mlkitbarcodescanner;
+package com.funkyidol.mlkitbarcodescanner.util;
 
 import android.Manifest;
 import android.app.Activity;
@@ -6,16 +6,16 @@ import android.content.pm.PackageManager;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-class PermissionsHelper {
+public class PermissionsHelper {
 
     private static final int REQUEST_CODE = 10;
     private final Activity activity;
 
-    PermissionsHelper(Activity activity) {
+    public PermissionsHelper(Activity activity) {
         this.activity = activity;
     }
 
-    boolean hasCameraPermission() {
+    public boolean hasCameraPermission() {
         int permissionCheckResult = ContextCompat.checkSelfPermission(
                 activity,
                 Manifest.permission.CAMERA
@@ -23,7 +23,7 @@ class PermissionsHelper {
         return permissionCheckResult == PackageManager.PERMISSION_GRANTED;
     }
 
-    void requestCameraPermission() {
+    public void requestCameraPermission() {
         ActivityCompat.requestPermissions(
                 activity,
                 new String[]{Manifest.permission.CAMERA},
@@ -31,7 +31,7 @@ class PermissionsHelper {
         );
     }
 
-    boolean resultGranted(int requestCode,
+    public boolean resultGranted(int requestCode,
                           String[] permissions,
                           int[] grantResults) {
 
